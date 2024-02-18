@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School</title>
+    <script src="./registrar.js" defer></script>
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://img.freepik.com/vector-gratis/logotipo-escuela-primaria-libro-dibujado-mano_23-2149689287.jpg?w=740&t=st=1707969205~exp=1707969805~hmac=900a1158c64ecebed65b2b79a38d38a5dc833b6e1bfebe5d07ef28b8d2180bd7"
+                        alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Colegio Catolíco del Valle
+                </a>
+            </div>
+        </nav>
+        <div class="card register-student">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-campus-universitario_114360-10535.jpg?w=1060&t=st=1707969740~exp=1707970340~hmac=923075289fa2b656ea6a0cbaab2b5b0b843d2515cb7994c1f26fd419d2f1837e"
+                class="card-img-top" alt="Imagen de registro">
+            <div class="card-body">
+                <h5 class="card-tittle">REGISTRAR NUEVO ALUMNO</h5>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre(s)</label>
+                    <input type="text" class="form-control" id="nameStudent" placeholder="Ingresa el nombre del alumno">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="lastNameStudent"
+                        placeholder="Ingeresa los apellidos del alumno">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Edad</label>
+                    <input type="text" class="form-control" id="age" placeholder="Ingresa la edad del alumno">
+                </div>
+                <button type="button" onclick="getStudent(); " class="btn btn-outline-success">REGISTRAR</button>
+            </div>
+        </div>
+        <div class="card subjects-students">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-profesor-alumno_114360-7915.jpg?w=1060&t=st=1707972225~exp=1707972825~hmac=f60327d35d10f8cfd064a0e15b325184753b74f542bc73a3fa6ce94e57e05c93"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-tittle"> ALUMNOS INSCRITOS</h5>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <label for="floatingInput">Materia asignada</label>
+                        <input type="email" class="form-control subject" id="floatingInput" >
+                        <label for="floatingInput">Alumno asignado</label>
+                        <input type="email" class="form-control number-student" id="floatingInput ">
+                        <label for="floatingInput">Calificación</label>
+                        <input type="email" class="form-control note" id="floatingInput">
+                        <button type="button" onclick= "subjectCreate (); " class="btn btn-outline-success">ASIGNAR</button>
+                    </div>
+                </nav>
+                
+                <ul class="list-group list-group-flush" id="lista">
+                    <li class="list-group-item">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

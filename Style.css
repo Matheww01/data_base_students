@@ -1,0 +1,24 @@
+.grid-container{
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px auto 50px ;
+    grid-template-areas: 
+    'header header'
+    'section1 section2'
+    'footer footer';
+}
+
+.bg-body-tertiary {
+    grid-area: header;
+}
+.register-student{
+    grid-area: section1 ; 
+}
+
+
+.subjects-students{
+    grid-area: section2 ; 
+}
+
+
